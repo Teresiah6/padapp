@@ -7,22 +7,23 @@
     tools:context=".SplashActivity">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/splashscreen"
-        android:scaleType="fitXY"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/splashImage"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/splashimage"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/splash_image" />
 
     <TextView
+        android:id="@+id/splashText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:text="@string/splash_text"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
         android:gravity="center_horizontal"
-        android:layout_margin="20dp"
-        android:textStyle="bold"
-        android:layout_alignParentBottom="true"/>
+        android:text="@string/splash_text"
+        android:textSize="14sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>
