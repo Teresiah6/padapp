@@ -1,4 +1,4 @@
-package com.example.android.padapp
+package com.example.android.padapp.util
 
 import android.content.Context
 import android.view.animation.Animation
@@ -12,3 +12,4 @@ fun animate(context: Context, resId: Int): LayoutAnimationController {
 fun loadAnimation(context: Context, resId: Int): Animation {
     return AnimationUtils.loadAnimation(context, resId)
 }
+

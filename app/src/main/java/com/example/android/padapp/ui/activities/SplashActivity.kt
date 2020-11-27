@@ -1,10 +1,12 @@
-package com.example.android.padapp
+package com.example.android.padapp.ui.activities
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import com.example.android.padapp.R
 import com.example.android.padapp.databinding.ActivitySplashBinding
+import com.example.android.padapp.util.loadAnimation
 
 class SplashActivity : AppCompatActivity() {
 

@@ -10,12 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".DonateToActivity"/>
-        <activity android:name=".SelectionActivity" />
-        <activity android:name=".LoginActivity"
+        <activity android:name=".ui.activities.SelectionActivity" />
+        <activity android:name=".ui.activities.LoginActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".SignupActivity"
+        <activity android:name=".ui.activities.SignupActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".SplashActivity"
+        <activity android:name=".ui.activities.SplashActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
