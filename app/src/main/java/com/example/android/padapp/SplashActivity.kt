@@ -1,26 +1,42 @@
 package com.example.android.padapp
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
+import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
+import com.example.android.padapp.databinding.ActivitySplashBinding
 
 class SplashActivity : AppCompatActivity() {
-    private val SPLASH_TIME_OUT:Long = 3000 // 1 sec
+
+    lateinit var binding: ActivitySplashBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash)
 
+        /**
+         * Inflate layout
+         * */
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_splash)
 
-
-            Handler().postDelayed({
-                // This method will be executed once the timer is over
-                // Start your app main activity
-
-                startActivity(Intent(this,SignupActivity::class.java))
-
-                // close this activity
-                finish()
-            }, SPLASH_TIME_OUT)
+        val splashAnimator = loadAnimation(this@SplashActivity, R.anim.splash_animation)
+        binding.apply {
+            splashImage.startAnimation(splashAnimator)
+            splashText.startAnimation(splashAnimator)
         }
+
+        //running on thread
+        val timer = object : Thread() {
+            override fun run() {
+                try {
+                    sleep(4000)
+                } catch (e: InterruptedException) {
+                    e.printStackTrace()
+                } finally {
+                    startActivity(Intent(this@SplashActivity, LoginActivity::class.java))
+                }
+            }
+        }
+        timer.start()
+
     }
+}
