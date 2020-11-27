@@ -21,6 +21,11 @@ class SplashActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_splash)
 
         val splashAnimator = loadAnimation(this@SplashActivity, R.anim.splash_animation)
+
+        /**
+         * Instead of repeating binding.view_name
+         * use apply
+         * */
         binding.apply {
             splashImage.startAnimation(splashAnimator)
             splashText.startAnimation(splashAnimator)
