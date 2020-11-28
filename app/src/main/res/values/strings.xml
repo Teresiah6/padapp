@@ -2,5 +2,5 @@
     <string name="app_name">Padapp</string>
     <string name="splash_text">One million girls miss school each month in kenya because they can not afford menstrual products\n~Aljazeera</string>
     <string name="splashimage">splashImage</string>
-    <string name="log_into_account">LOG INTO ACCOUNT</string>
+    <string name="log_into_account">SIGN IN</string>
 </resources>
