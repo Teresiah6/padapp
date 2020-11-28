@@ -40,6 +40,7 @@ class SplashActivity : AppCompatActivity() {
                     e.printStackTrace()
                 } finally {
                     startActivity(Intent(this@SplashActivity, LoginActivity::class.java))
+                    finish()
                 }
             }
         }
