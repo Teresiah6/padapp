@@ -3,4 +3,9 @@
     <string name="splash_text">One million girls miss school each month in kenya because they can not afford menstrual products\n~Aljazeera</string>
     <string name="splashimage">splashImage</string>
     <string name="log_into_account">SIGN IN</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
 </resources>

@@ -12,11 +12,11 @@
 
         <activity android:name=".ui.activities.SelectionActivity" />
         <activity android:name=".ui.activities.LoginActivity"
-            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"/>
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".ui.activities.SignupActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".ui.activities.SplashActivity"
-            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
