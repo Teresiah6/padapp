@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.android.padapp.R
 
-class SelectionActivity : AppCompatActivity() {
-
-
+class DonateActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_selection)
+        setContentView(R.layout.activity_donate)
+
+
     }
 }

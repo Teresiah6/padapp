@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashActivity">
+
+    <activity
+        android:id="@+id/splashActivity"
+        android:name="com.example.android.padapp.ui.activities.SplashActivity"
+        android:label="splash_activity"
+        tools:layout="@layout/activity_splash">
+
+        <action
+            android:id="@+id/action_splashActivity_toLoginActivity"
+            app:destination="@id/loginActivity"
+            />
+
+    </activity>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.android.padapp.ui.activities.LoginActivity"
+        android:label="login_activity"
+        tools:layout="@layout/activity_login">
+        <action
+            android:id ="@+id/action_loginActivity_tosignupActivity"
+            app:destination="@id/signupActivity"/>
+        <action
+            android:id ="@+id/action_loginActivity_toSelectionActivity"
+            app:destination ="@id/selectionActivity"/>
+
+    </activity>
+    <activity
+        android:id="@+id/signupActivity"
+        android:name="com.example.android.padapp.ui.activities.SignupActivity"
+        android:label="signup_activity"
+        tools:layout="@layout/activity_signup">
+    </activity>
+
+    <activity
+        android:id="@+id/selectionActivity"
+        android:name="com.example.android.padapp.ui.activities.SelectionActivity"
+        android:label="selection_activity"
+        tools:layout="@layout/activity_selection">
+        <action
+            android:id="@+id/action_selectionActivity_to_donateActivity"
+            app:destination="@id/donateActivity" />
+    </activity>
+
+    <activity
+        android:id="@+id/donateActivity"
+        android:name="com.example.android.padapp.ui.activities.DonateActivity"
+        android:label="donate_activity"
+        tools:layout="@layout/activity_donate">
+
+    </activity>
+
+
+</navigation>
