@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "109458404934",
+    "project_id": "padapp-10835",
+    "storage_bucket": "padapp-10835.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:109458404934:android:a23e22a8d6bdd025e43c47",
+        "android_client_info": {
+          "package_name": "com.example.android.padapp.ui.activities"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "109458404934-08cdgr2ji6f8fa381q023ba48km4hq4f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.padapp.ui.activities",
+            "certificate_hash": "3b6ae95a1bd71858d240470f0b42b53004382fab"
+          }
+        },
+        {
+          "client_id": "109458404934-1qa56d32f8kl5omehc9ur5ce11k8keuo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDx2OUGizH941k3S1ts4foMm9zSVJhcOJk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "109458404934-1qa56d32f8kl5omehc9ur5ce11k8keuo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
