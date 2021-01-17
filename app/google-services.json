@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:109458404934:android:a23e22a8d6bdd025e43c47",
         "android_client_info": {
-          "package_name": "com.example.android.padapp.ui.activities"
+          "package_name": "com.example.android.padapp"
         }
       },
       "oauth_client": [
